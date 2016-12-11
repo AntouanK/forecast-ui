@@ -12,9 +12,32 @@
     </style>
   </head>
   <body>
-    <span>
+    <h1>
       Forecast
-    </span>
+    </h1>
+
+    <div id="main-form">
+      <div>
+        <label for="input-date">Date</label>
+        <input id="input-date" type="text">
+      </div>
+      <div>
+        <label for="input-competition">Competition</label>
+        <input id="input-competition" type="text">
+      </div>
+      <div>
+        <label for="input-competitor-a">Competitor A</label>
+        <input id="input-competitor-a" type="text">
+      </div> 
+      <div>
+        <label for="input-competitor-b">Competitor B</lbbel>
+        <input id="input-competitor-b" type="text">
+      </div>
+
+        <button type="submit" onclick="(function(){ console.log('hello'); })()">
+          Submit
+        </button>
+    </div>
 
     <script src="entry.js"></script>
   </body>
