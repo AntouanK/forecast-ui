@@ -7,7 +7,7 @@ var printInput = function() {
   var inputDateElement 
     = document.querySelector('#input-date');
   
-  var inputCompetionElement 
+  var inputCompetitionElement 
     = document.querySelector('#input-competition');
 
   var inputCompetitorAElement 
@@ -18,11 +18,19 @@ var printInput = function() {
 
   var values = 
     { date: inputDateElement.value
-    , competition: inputCompetionElement.value 
+    , competition: inputCompetitionElement.value 
     , competitorA: inputCompetitorAElement.value
     , competitorB: inputCompetitorBElement.value
     };
 
-  console.log(values); 
+
+  var eventListElement 
+    = document.querySelector('#event-list');
+
+  eventListElement.innerHTML 
+    = '<ul>'
+    + '<li> Date: ' + values.date + '</li>' 
+    + '<li> Competition: ' + values.competition + '</li>' 
+    + '</ul>';
 };
 
