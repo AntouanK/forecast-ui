@@ -12,6 +12,8 @@
     </style>
   </head>
   <body>
+    <script src="entry.js"></script>
+    
     <h1>
       Forecast
     </h1>
@@ -30,15 +32,14 @@
         <input id="input-competitor-a" type="text">
       </div> 
       <div>
-        <label for="input-competitor-b">Competitor B</lbbel>
+        <label for="input-competitor-b">Competitor B</label>
         <input id="input-competitor-b" type="text">
       </div>
 
-        <button type="submit" onclick="(function(){ console.log('hello'); })()">
+        <button type="submit" onclick="printInput()">
           Submit
         </button>
     </div>
 
-    <script src="entry.js"></script>
   </body>
 </html>
